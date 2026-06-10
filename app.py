@@ -125,9 +125,9 @@ with gr.Blocks() as demo:
     with gr.Accordion("View Current Module Source (WAT format)", open=False):
         gr.Code(
             value=current_wat_content, 
-            language="wasm", 
+            language="lisp",
             interactive=False
         )
 
-if __name__ == "__main__":
+
     demo.launch()
